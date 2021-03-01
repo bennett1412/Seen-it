@@ -1,8 +1,33 @@
-#movies img, #movie img{
-  width:70%;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
+.selector{
+  display: flexbox;
+  text-align: center;
 }
 
+.well{
+  height: 330px;
+}
+
+.movieTitle{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#movies img, #movie img{
+  width:70%;
+  margin-top: 3rem;
+  alt: "Image Problems ¯\_(ツ)_/¯";
+}
+
+#movies .details{
+margin-bottom: 3rem;
+}
+
+body{
+  font-family: 'Quicksand',sans-serif;
+}
 
 
 @media(min-width:960px){

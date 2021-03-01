@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/4/cyborg/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/32fc3587da.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/checkbox.css">
+    <title>Seen-it?</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Seen-it?</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="/genre.html">Genre
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Randomiser
+                  <span class="sr-only">(current)</span>
+                </a>
+          </ul>
+        </div>
+      </nav>
+      <article class="selector">
+    <h3 >Select the genre you want: </h3>
+    <div class="container">
+        <ul class="ks-cboxtags">
+          <li><input type="checkbox" id="Action" value="Action" name="genre"><label for="Action">Action</label></li>
+          <li><input type="checkbox" id="Adventure" value="Adventure" name="genre"><label for="Adventure">Adventure</label></li>
+          <li><input type="checkbox" id="Romance" value="Romance" name="genre"><label for="Romance">Romance</label></li>
+          <li><input type="checkbox" id="Animation" value="Animation" name="genre"><label for="Animation">Animation</label></li>
+          <li><input type="checkbox" id="Comedy" value="Comedy" name="genre"><label for="Comedy">Comedy</label></li>
+          <li><input type="checkbox" id="Crime" value="Crime" name="genre"><label for="Crime">Crime</label></li>
+          <li><input type="checkbox" id="Documentary" value="Documentary" name="genre"><label for="Documentary">Documentary</label></li>
+          <li><input type="checkbox" id="Drama" value="Drama" name="genre"><label for="Drama">Drama</label></li>
+          <li><input type="checkbox" id="Family" value="Family" name="genre"><label for="Family">Family</label></li>
+          <li><input type="checkbox" id="Fantasy" value="Fantasy" name="genre"><label for="Fantasy">Fantasy</label></li>
+          <li><input type="checkbox" id="History" value="History" name="genre"><label for="History">History</label></li>
+          <li><input type="checkbox" id="Horror" value="Horror" name="genre"><label for="Horror">Horror</label></li>
+          <li><input type="checkbox" id="Mystery" value="Mystery" name="genre"><label for="Mystery">Mystery</label></li>
+          <li><input type="checkbox" id="Science Fiction" value="Science Fiction" name="genre"><label for="Science Fiction">Sci-Fi</label></li>
+          <li><input type="checkbox" id="Thriller" value="Thriller" name="genre"><label for="Thriller">Thriller</label></li>
+          <li><input type="checkbox" id="War" value="War" name="genre"><label for="War">War</label></li>
+          <li><input type="checkbox" id="Western" value="Western" name="genre"><label for="Western">Western</label></li>
+
+
+
+        </ul>
+        <button class="btn btn-outline-primary" id="generate">Generate</button>
+      </div>
+      </article>
+      <br>
+      <div class="container">
+        <div id="movies" class="row"></div>
+      </div>
+      <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>      
+<script src="js/main.js" ></script>    
+</body>
+</html>
