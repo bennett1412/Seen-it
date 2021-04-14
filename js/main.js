@@ -1,3 +1,4 @@
+const api_key = '379b2dc7f7c0b942aa689b04aac1fcf6';
 //function to get the values from genre
 $(document).ready(() =>{
     $('#searchForm').on('submit',(e) => {
@@ -116,7 +117,7 @@ gen.addEventListener("click",function(){
 
 // str = 'https://api.themoviedb.org/3/search/movie?api_key=379b2dc7f7c0b942aa689b04aac1fcf6&language=en-US&query=$('searchText')&page=1&include_adult=false';
 function getMovies(str){
-    axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=379b2dc7f7c0b942aa689b04aac1fcf6&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=${str}`)
+    axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=${api_key}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=${str}`)
     .then((response) => {
         console.log(response);
         let movies = response.data.results;
@@ -138,6 +139,7 @@ function getMovies(str){
         console.log(err);
     });
 }
+
 // document.getElementById("random").addEventListener("click", function (){
 //     const characters = 'abcdefghijklmnopqrstuvwxyz';
 //     let c = characters[Math.floor(Math.random()*25)];

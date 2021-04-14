@@ -34,7 +34,6 @@ body{
 
   #movies img, #movie img{
     width:100%;
-  
   }
   
   #movies .col-md-3 .well{
@@ -43,6 +42,11 @@ body{
 
   #movies .col-md-3 img{
     height:350px;
+  }
+
+  #rmovie{
+    display: flexbox;
+    text-align: center;
   }
 }
 
